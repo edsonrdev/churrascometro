@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Churrascômetro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Churrascômetro</h1>
+      <p>Calculadora de carne para o seu churrasco.</p>
+    </header>
+
+    <form>
+      <div class="form-group">
+        <label for="quantidade-adultos">Quantidade de adultos:</label>
+        <input type="number" min="1" id="quantidade-adultos" />
+      </div>
+      <div class="form-group">
+        <label for="quantidade-criancas">Quantidade de crianças:</label>
+        <input type="number" min="1" id="quantidade-criancas" />
+      </div>
+      <div class="form-group">
+        <label for="carne-por-adulto">Carne por adulto (em gramas):</label>
+        <input type="number" min="0.01" step="0.01" id="carne-por-adulto" />
+      </div>
+      <label for="edson-esta-incluso">
+        <input type="checkbox" name="" id="edson-esta-incluso" /> Edson está
+        incluso?
+      </label>
+      <button type="button">Calcular</button>
+    </form>
+
+    <div class="consumo">
+      <h2>Consumo</h2>
+
+      <div class="container-consumo">
+        <table>
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Cálculo</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- <tr>
+              <td>Adultos</td>
+              <td>10 x 300g</td>
+              <td>3.0kg</td>
+            </tr>
+
+            <tr>
+              <td>Crianças</td>
+              <td>2 x 100g</td>
+              <td>0.2kg</td>
+            </tr>
+            <tr>
+              <td>Edson</td>
+              <td>2 x 300g</td>
+              <td>0.6kg</td>
+            </tr>
+            <tr>
+              <td colspan="2">Total</td>
+              <td>3.8kg</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
